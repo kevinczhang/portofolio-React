@@ -1,12 +1,14 @@
 import React from 'react';
 import UserList from '../containers/user-list';
 import UserDetails from '../containers/user-detail';
+import MenuTop from '../containers/menu-top';
 import { Button } from 'react-foundation-components/lib/button';
 
 require('../../scss/style.scss');
 
 const App = () => (
     <div>
+        <MenuTop />
         <a className="myAnchor" href="/">Test myAnchor</a>
         <h2>User List</h2>
         <UserList />

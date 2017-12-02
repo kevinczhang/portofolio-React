@@ -5,3 +5,11 @@ export const selectUser = (user) => {
         payload: user
     }
 };
+
+export const handleToggle = (currentStatus) => {
+    console.log("Topbar toggled!");
+    return {
+        type: 'TOPBAR_TOGGLED',
+        payload: !currentStatus
+    }
+}
