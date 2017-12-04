@@ -1,50 +1,50 @@
-@import "../../node_modules/foundation-sites/scss/foundation";
+// @import "../../node_modules/foundation-sites/scss/foundation";
 
-@include foundation-flex-grid;
-@include foundation-flex-classes;
+// @include foundation-flex-grid;
+// @include foundation-flex-classes;
 // @include foundation-everything;
 
-$primary: #006699;
-$primaryColor: #eeffcc;
-$container-width: 100%;
+// $primary: #006699;
+// $primaryColor: #eeffcc;
+// $container-width: 100%;
 
-body {
-	$primaryColor: #ccc;
-	background: $primaryColor;
-}
+// body {
+// 	$primaryColor: #ccc;
+// 	background: $primaryColor;
+// }
 
-p {
-	color: $primaryColor;
-}
+// p {
+// 	color: $primaryColor;
+// }
 
-h2 {
-	color: $primary;
-}
+// h2 {
+// 	color: $primary;
+// }
 
-.container {
-	width: $container-width;
-	h1 {
-		color: red;
-	}
-}
+// .container {
+// 	width: $container-width;
+// 	h1 {
+// 		color: red;
+// 	}
+// }
 
-.col-4 {
-	width: $container-width;
-}
+// .col-4 {
+// 	width: $container-width;
+// }
 
-a.myAnchor {
-	color: blue;
-	&:link {
-		color: green;
-    	background-color: transparent;
-    	text-decoration: none;
-	}
-	&:hover {
-		text-decoration: underline;
-	}
-	&:visited {
-		color: pink;
-    	background-color: transparent;
-    	text-decoration: none;
-	}
-}
+// a.myAnchor {
+// 	color: blue;
+// 	&:link {
+// 		color: green;
+//     	background-color: transparent;
+//     	text-decoration: none;
+// 	}
+// 	&:hover {
+// 		text-decoration: underline;
+// 	}
+// 	&:visited {
+// 		color: pink;
+//     	background-color: transparent;
+//     	text-decoration: none;
+// 	}
+// }

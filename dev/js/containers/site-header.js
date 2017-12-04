@@ -9,7 +9,7 @@ import { MenuIcon } from 'react-foundation-components/lib/menu-icon';
 import { ShowForScreenSize, HideForScreenSize } from 'react-foundation-components/lib/visibility';
 import { Button } from 'react-foundation-components/lib/button';
 
-class MenuTop extends Component {
+class SiteHeader extends Component {
     render() {
         return (
             <TopBar stack="medium">
@@ -58,5 +58,5 @@ function matchDispatchToProps(dispatch){
 
 // We don't want to return the plain UserList (component) anymore, we want to return the smart Container
 //      > UserList is now aware of state and actions
-export default connect(mapStateToProps, matchDispatchToProps)(MenuTop);
+export default connect(mapStateToProps, matchDispatchToProps)(SiteHeader);
 

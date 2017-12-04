@@ -8,6 +8,7 @@ import promise from 'redux-promise';
 import createLogger from 'redux-logger';
 import allReducers from './reducers';
 import App from './components/App';
+import { BrowserRouter } from 'react-router-dom'
 
 const logger = createLogger();
 const store = createStore(
@@ -15,9 +16,10 @@ const store = createStore(
     applyMiddleware(thunk, promise, logger)
 );
 
-ReactDOM.render(
-    <Provider store={store}>
-        <App />
-    </Provider>,
-    document.getElementById('root')
-);
+ReactDOM.render((
+    <BrowserRouter>
+        <Provider store={store}>
+            <App />
+        </Provider>
+    </BrowserRouter>
+),document.getElementById('root'));
