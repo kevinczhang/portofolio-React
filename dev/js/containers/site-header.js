@@ -18,15 +18,14 @@ class SiteHeader extends Component {
                         <HideForScreenSize screenSize="large" componentClass={ MenuItem }>
                             <MenuIcon dark onClick={() => this.props.handleToggle(this.props.show)} />
                         </HideForScreenSize>
-                        <MenuItem text>Site Title</MenuItem>
+                        <MenuItem><a href="/">Profolio</a></MenuItem>
                     </Menu>
                 </TopBarTitle>
                 <ShowForScreenSize screenSize={this.props.show ? 'small' : 'large'}>
                     <TopBarItem position="left">
                         <Menu vertical horizontal="large">
-                            <MenuItem><a href="#">One</a></MenuItem>
-                            <MenuItem><a href="#">Two</a></MenuItem>
-                            <MenuItem><a href="#">Three</a></MenuItem>
+                            <MenuItem><a href="/about">About</a></MenuItem>
+                            <MenuItem><a href="#">Projects</a></MenuItem>
                         </Menu>
                     </TopBarItem>
                     <TopBarItem position="right">
