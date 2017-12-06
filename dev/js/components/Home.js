@@ -3,8 +3,6 @@ import UserList from '../containers/user-list';
 import UserDetails from '../containers/user-detail';
 import { Button } from 'react-foundation-components/lib/button';
 
-require('../../scss/home.scss');
-
 const Home = () => (
     <div>
         <div className="row">

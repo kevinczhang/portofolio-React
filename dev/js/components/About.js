@@ -1,7 +1,5 @@
 import React from 'react'
 
-require('../../scss/about.scss');
-
 const About = () => (
     <div className="timeline">
 
