@@ -14,16 +14,16 @@ module.exports = {
         loaders: [
             {
                 test: /\.js$/,
-                loaders: ['babel'],
+                loaders: ['babel-loader'],
                 exclude: /node_modules/
             },
             {
                 test: /\.scss/,
-                loader: 'style!css!sass?sourceMap'
+                loader: 'style-loader!css-loader!sass-loader?sourceMap'
             },
             {
                 test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)(\?.*$|$)/,
-                loader: 'file'
+                loader: 'file-loader'
             }
         ]
     },
