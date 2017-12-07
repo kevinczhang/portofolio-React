@@ -17,6 +17,7 @@
     "cross-env": "^1.0.8",
     "css-loader": "^0.23.1",
     "expect": "^1.20.1",
+    "font-awesome": "^4.7.0",
     "foundation-sites": "^6.4.4-rc1",
     "node-libs-browser": "^1.0.0",
     "node-sass": "^4.7.2",
@@ -40,6 +41,7 @@
   "devDependencies": {
     "babel-plugin-react-transform": "^2.0.2",
     "babel-preset-stage-0": "^6.5.0",
+    "file-loader": "^1.1.5",
     "react-transform-hmr": "^1.0.4"
   }
 }

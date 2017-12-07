@@ -1,9 +1,12 @@
-@import '../../node_modules/foundation-sites/scss/foundation';
+@import '~foundation-sites/scss/foundation';
 
-@import '../../node_modules/foundation-sites/scss/settings/settings';
+@import '../scss/settings';
 $global-flexbox: false;
 
 @include foundation-everything($flex: false);
+
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
 
 @import '../scss/home';
 @import '../scss/about';
@@ -52,5 +55,3 @@ $global-flexbox: false;
 //     	text-decoration: none;
 // 	}
 // }
-
-
