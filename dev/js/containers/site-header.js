@@ -25,7 +25,7 @@ class SiteHeader extends Component {
                     <TopBarItem position="left">
                         <Menu vertical horizontal="large">
                             <MenuItem><a href="/about">About</a></MenuItem>
-                            <MenuItem><a href="#">Projects</a></MenuItem>
+                            <MenuItem><a href="/projects">Projects</a></MenuItem>
                         </Menu>
                     </TopBarItem>
                     <TopBarItem position="right">
