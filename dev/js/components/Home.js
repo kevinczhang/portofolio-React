@@ -5,6 +5,10 @@ import UserList from '../containers/user-list';
 import UserDetails from '../containers/user-detail';
 import { Button } from 'react-foundation-components/lib/button';
 import myAvatar from "../../images/myAvatar.svg";
+var Carousel = require('react-responsive-carousel').Carousel;
+import image1 from "../../images/NiceToMeetYou.png";
+import image2 from "../../images/projects.png";
+import image3 from "../../images/3.jpeg";
 
 export default class Home extends React.Component {
     render(){
@@ -22,38 +26,21 @@ export default class Home extends React.Component {
                     </div>
                 </div>
                 <hr />
-
-                <div className="fullscreen-image-slider">
-                    <div className="orbit" role="region" aria-label="FullScreen Pictures" data-orbit>
-                        <ul className="orbit-container">
-                        <button className="orbit-previous">
-                            <span className="show-for-sr">Previous Slide</span>
-                            <span className="nav fa fa-chevron-left fa-3x"></span>
-                        </button>
-                        <button className="orbit-next">
-                            <span className="show-for-sr">Next Slide</span>
-                            <span className="nav fa fa-chevron-right fa-3x"></span>
-                        </button>
-                        <li className="is-active orbit-slide">
-                            <img className="orbit-image" src="https://i.imgur.com/16z9ObN.jpg" alt="Space"></img>
-                            <figcaption className="orbit-caption">
-                            <h1>Lorem ipsum dolor sit amet, <br/>consectetur adipisicing elit.</h1>
-                            </figcaption>
-                        </li>
-                        <li className="orbit-slide">
-                            <img className="orbit-image" src="https://i.imgur.com/JD4Caxa.jpg" alt="Space"></img>
-                            <figcaption className="orbit-caption">
-                            <h1>Lorem ipsum dolor sit amet, <br/>consectetur adipisicing elit.</h1>
-                            </figcaption>
-                        </li>
-                        <li className="orbit-slide">
-                            <img className="orbit-image" src="https://i.imgur.com/rsTQbNV.jpg" alt="Space"></img>
-                            <figcaption className="orbit-caption">
-                            <h1>Lorem ipsum dolor sit amet, <br/>consectetur adipisicing elit.</h1>
-                            </figcaption>
-                        </li>
-                        </ul>
-                    </div>
+                <div className="carousel-row">
+                    <Carousel autoPlay interval={5000} infiniteLoop>
+                        <div>
+                            <img src={image1} alt="image1"/>
+                            <p className="legend">Legend 1</p>
+                        </div>
+                        <div>
+                            <img src={image2} alt="image2"/>
+                            <p className="legend">Legend 2</p>
+                        </div>
+                        <div>
+                            <img src={image3} alt="image3"/>
+                            <p className="legend">Legend 3</p>
+                        </div>
+                    </Carousel>
                 </div>
             </div>
         )

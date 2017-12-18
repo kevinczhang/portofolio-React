@@ -1,3 +1,4 @@
+@import '~react-responsive-carousel/lib/styles/carousel.min.css';
 $portfolio-resume-spacing: 2rem;
 $light-gray: #D3D3D3;
 $black: black;
@@ -36,4 +37,12 @@ $black: black;
     vertical-align: middle;
     color: $black;
   }
+}
+
+.carousel.carousel-slider > div{
+  height: -webkit-fill-available;
+}
+
+.carousel-row {
+  padding: 0px 80px 80px 80px;
 }

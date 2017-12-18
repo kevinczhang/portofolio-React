@@ -64,7 +64,6 @@ export default class Projects extends React.Component {
                 </div>
 
                 <div className="row">
-                    <a className="myAnchor" href="/">Test myAnchor</a>
                     <h2>User List</h2>
                     <UserList />
                     <hr />
